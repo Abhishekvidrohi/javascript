@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Odd and Even Numbers</title>
+</head>
+<body>
+
+  <pre id="output"></pre>
+
+  <script>
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // sample numbers
+    let evenCount = 0;
+    let oddCount = 0;
+
+    let result = "Numbers: " + numbers.join(", ") + "\n\n";
+
+    result += "Even Numbers: ";
+    numbers.forEach(num => {
+      if (num % 2 === 0) {
+        result += num + " ";
+        evenCount++;
+      }
+    });
+
+    result += "\nOdd Numbers: ";
+    numbers.forEach(num => {
+      if (num % 2 !== 0) {
+        result += num + " ";
+        oddCount++;
+      }
+    });
+
+    result += n\nTotal Even Numbers = ${evenCount};
+    result += \nTotal Odd Numbers = ${oddCount};
+
+    document.getElementById("output").textContent = result;
+  </script>
+</body>
+</html>

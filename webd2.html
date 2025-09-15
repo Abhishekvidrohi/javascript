@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(210, 230, 173);
+        }
+
+        #lucky {
+            border: 5px solid black;
+            height: 400px;
+            width: 400px;
+            background-color: rgb(180, 70, 79);
+            padding: auto;
+            margin: 500px;
+        }
+
+        
+        
+        #l1, #l2 {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 70px;
+            text-align: center;
+     
+        }
+        #im{
+            height: 50px;
+            width: 50px;
+        }
+        #second{
+            height: 500px;
+            width: 300px;
+            border: 2px solid black;
+            background-color: yellow;
+           position: absolute;
+           align-items: center;
+
+        }
+        #im2{
+            height: 200px;
+            width: 200px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="lucky">
+        <h1 style="text-align: center;"> <img id="im" src="https://thumbs.dreamstime.com/b/electricity-logo-electric-icon-vector-design-template-plug-creative-concept-lightning-power-energy-element-electrical-165308073.jpg" alt="">
+Counter App</h1>
+        <button id="l1">+</button>
+        <button id="l2">-</button>
+        <p id="counter" style="text-align: center; font-size: 40px; font-weight: bold;">0</p>
+
+        <script>
+            var count = 0;
+
+            var counterDisplay = document.getElementById('counter');
+            var IB = document.getElementById('l1');
+            var DB = document.getElementById('l2');
+
+            IB.addEventListener('click', () => {
+                count++;
+                counterDisplay.textContent = count;
+            });
+
+            DB.addEventListener('click', () => {
+                count--;
+                counterDisplay.textContent = count;
+            });
+        </script>
+        <div id="second">
+            <h2 id="logo2"><img id="im2" src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" alt=""></h2>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
